@@ -27,7 +27,7 @@ export default function App() {
                         <article key={filme.id}>
                             <strong>{filme.nome}</strong>
                             <img src={filme.foto} alt={filme.nome}></img>
-                            <Link to="/">Acessar</Link>
+                            <Link to={`/Sinopse/${filme.id}`}>Acessar</Link>
                         </article>
                     )
                 })}
